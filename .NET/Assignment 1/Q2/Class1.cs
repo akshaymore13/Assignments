@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ClassLibrary2;
 
-namespace ConsoleApp2
+namespace ClassLibrary2
 {
-    internal class Program
+    public class Class1
     {
-        static void Main(string[] args)
+        public int fact(int x)
         {
-            Class1 s1 = new Class1();
-
-            int fact = s1.fact(4);
-            Console.WriteLine(fact);
+            int fact = 1;
+            for (int i = 1; i <= x; i++)
+            {
+                fact = fact * i;
+            }
+            return fact;
         }
     }
 }
